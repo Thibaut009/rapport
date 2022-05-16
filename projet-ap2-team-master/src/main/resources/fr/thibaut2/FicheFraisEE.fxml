@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="665.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.thibaut2.FicheFraisEEController">
+   <children>
+      <Label layoutX="99.0" prefHeight="39.0" prefWidth="248.0" text="ETAT DES FRAIS ENGAGE" textFill="#056c88">
+         <font>
+            <Font name="Amiri" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutY="37.0" prefHeight="1.0" prefWidth="426.0" style="-fx-background-color: #696969;" />
+      <Label layoutX="177.0" layoutY="190.0" text="Autres frais" textFill="#056c86">
+        
+      </Label>
+      <Line endX="324.3999938964844" layoutX="101.0" layoutY="505.0" startX="-100.0" stroke="#969696" strokeWidth="2.0" />
+      <TextArea layoutY="618.0" prefHeight="46.0" prefWidth="426.0" style="-fx-background-color: #FFFFFF;" text="&#10;                      &#10;">
+         <font>
+            <Font name="System Bold Italic" size="8.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="QTE_nuitee" layoutX="141.0" layoutY="80.0" onKeyReleased="#calcul" prefHeight="26.0" prefWidth="72.0" />
+      <TextField fx:id="QTE_repas" layoutX="141.0" layoutY="114.0" onKeyReleased="#calcul" prefHeight="26.0" prefWidth="72.0" />
+      <TextField fx:id="QTE_km" layoutX="141.0" layoutY="147.0" onKeyReleased="#calcul" prefHeight="26.0" prefWidth="72.0" />
+      <Label alignment="CENTER" layoutX="18.0" layoutY="41.0" prefHeight="26.0" prefWidth="116.0" text="Frais forfaitaires" />
+      <Label alignment="CENTER" layoutX="37.0" layoutY="84.0" prefHeight="17.0" prefWidth="79.0" text="Nuitée " />
+      <Label layoutX="43.0" layoutY="118.0" />
+      <Label layoutX="43.0" layoutY="151.0" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="118.0" prefHeight="17.0" prefWidth="72.0" text="Repas midi" />
+      <Label alignment="CENTER" layoutX="41.0" layoutY="151.0" prefHeight="17.0" prefWidth="72.0" text="Kilométrage" />
+      <Label alignment="CENTER" layoutX="150.0" layoutY="45.0" prefHeight="17.0" prefWidth="55.0" text="Quantité" />
+      <Label layoutX="227.0" layoutY="45.0" text="Montant unitaire" />
+      <Label layoutX="332.0" layoutY="45.0" />
+      <Label alignment="CENTER" layoutX="351.0" layoutY="45.0" prefHeight="17.0" prefWidth="35.0" text="Total" />
+      <TextField fx:id="MU_nuitee" layoutX="223.0" layoutY="80.0" prefHeight="26.0" prefWidth="97.0" text="80.00" />
+      <TextField fx:id="MU_repas" layoutX="223.0" layoutY="115.0" prefHeight="26.0" prefWidth="97.0" text="29.00" />
+      <TextField fx:id="MU_km" layoutX="223.0" layoutY="147.0" prefHeight="26.0" prefWidth="97.0" text="0.52" />
+      <TextField fx:id="TOTAL_nuitee" layoutX="332.0" layoutY="80.0" prefHeight="26.0" prefWidth="72.0" />
+      <TextField fx:id="TOTAL_repas" layoutX="333.0" layoutY="115.0" prefHeight="26.0" prefWidth="72.0" />
+      <TextField fx:id="TOTAL_km" layoutX="333.0" layoutY="147.0" prefHeight="26.0" prefWidth="72.0" />
+      <Label alignment="CENTER" layoutX="37.0" layoutY="244.0" prefHeight="17.0" prefWidth="72.0" text="Date" />
+      <Label alignment="CENTER" layoutX="177.0" layoutY="244.0" prefHeight="17.0" prefWidth="72.0" text="Libelle" />
+      <Label alignment="CENTER" layoutX="311.0" layoutY="244.0" prefHeight="17.0" prefWidth="72.0" text="Montant" />
+      <TextField layoutX="14.0" layoutY="278.0" prefHeight="26.0" prefWidth="124.0" />
+      <TextField layoutX="15.0" layoutY="320.0" prefHeight="26.0" prefWidth="124.0" />
+      <TextField layoutX="15.0" layoutY="360.0" prefHeight="26.0" prefWidth="124.0" />
+      <TextField layoutX="151.0" layoutY="278.0" prefHeight="26.0" prefWidth="124.0" />
+      <TextField layoutX="151.0" layoutY="320.0" prefHeight="26.0" prefWidth="124.0" />
+      <TextField layoutX="151.0" layoutY="360.0" prefHeight="26.0" prefWidth="124.0" />
+      <TextField layoutX="285.0" layoutY="278.0" prefHeight="26.0" prefWidth="124.0" />
+      <TextField layoutX="285.0" layoutY="320.0" prefHeight="26.0" prefWidth="124.0" />
+      <TextField layoutX="285.0" layoutY="360.0" prefHeight="26.0" prefWidth="124.0" />
+      <Button fx:id="Validation" onAction="#ValidationEvent" layoutX="288.0" layoutY="418.0" mnemonicParsing="false" text="Valider fiche de frais" />
+   </children>
+</AnchorPane>

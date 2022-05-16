@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="503" prefWidth="337" style="-fx-background-color: navy;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.thibaut2.PrivilegeController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="113.0" layoutY="64.0" prefHeight="85.0" prefWidth="426.0" style="-fx-background-color: ;" text="Privilège" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" top="-140.0" />
+         </VBox.margin>
+      </Label>
+      <Separator layoutX="113.0" layoutY="64.0" maxWidth="160.0" minHeight="0.0" minWidth="0.0" prefHeight="11.0" prefWidth="100.0" style="-fx-background-color: ffd700;">
+         <VBox.margin>
+            <Insets top="-40.0" />
+         </VBox.margin>
+      </Separator>
+      <Button id="primaryButton" fx:id="Vbutton" alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="178.0" maxWidth="300.0" minWidth="300.0" mnemonicParsing="false" onAction="#SwitchToVisiteur" prefHeight="80.0" style="-fx-background-radius: 100; -fx-background-color: ffd700;" text="Je  me connecte en tant que visiteur" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="30.0" top="50.0" />
+         </VBox.margin></Button>
+      <Button fx:id="Cbutton" alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="300.0" maxWidth="300.0" minWidth="300.0" mnemonicParsing="false" onAction="#SwitchToComptable" prefHeight="79.0" style="-fx-background-radius: 100; -fx-background-color: ffd700;" text="Je me connecte en tant que comptable " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+   </children>
+</VBox>
